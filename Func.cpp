@@ -522,9 +522,6 @@ int obtainAvailblePathSlot(cTopology& _topo, cRequest* _request,vector<ID>& _pat
 
 int calculateMisAlignCount_Modified(cTopology& _topo,cRequest* _request,vector<ID>& _path,int _slot)
 {
-	//when calculate the count of misalignment we just count each link up to one time instead of the manner of counting multiple times that 
-	//used in "calculateMisAlignment" function.
-	
 	vector<ID>::iterator iter_nodeID;
 
 	vector<ID> linkID_vec;
